@@ -1,0 +1,14 @@
+def palindrome(string):
+    #all spaces between words in the string are removed
+    string=string.replace(" ", "")
+    string2=''.join(reversed(string))   #reversed the order of letters appearance in the string (without spaces)
+    if string2==string:
+        print("It's a palindrome")
+    else:
+        print("It's not a palindrome")
+        
+#Enter text/string for palindrome checking        
+text=input("enter text to check palindrome: ")
+
+#Function call for palindrome checking
+palindrome(text)
