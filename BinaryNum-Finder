@@ -1,0 +1,29 @@
+#count binary numbers with length equal to 'n' and no. of zeros equal to 'm'
+def countTotalBits(num, n, m):
+     
+     # convert number into it's binary and 
+     # remove first two characters 0b.
+    for num in num:
+         print("\n actual number",num)
+         binary = bin(num)[2:]
+         print("binry number",binary)
+         #print(len(binary)) 
+         if len(binary) > n:
+            continue
+         
+         if str(binary).count('0') > m:
+            continue
+            
+                 
+#          for digit in str(binary):
+#             print(digit)
+            
+#          if (digit[0] == 0):
+#             continue
+
+         binary_num_list.append(num)
+             
+binary_num_list=[]
+num = [13, 24, 4, 56 ,78]
+countTotalBits(num , n=6 , m=2)
+#print(binary_num_list)
