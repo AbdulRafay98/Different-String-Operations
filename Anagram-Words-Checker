@@ -1,0 +1,19 @@
+def anagram(string1,string2):
+    for lett in string1:
+        for letter in string2:
+            if lett==letter:
+                string2=string2.replace(letter,"")
+                break
+            else:
+                continue
+    if string2 !="":
+        print("the word is not an anagram")
+    else:
+        print("the word is an anagram")
+
+#Enter two string that are checked cor anagram
+text1=input("enter text: ")
+text2=input("enter another text: ")
+
+#Function call for anagram checking
+anagram(text1,text2)
